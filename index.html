@@ -1,51 +1,106 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- where we tell the browser how to process the document: -->
-        <!-- what title to put in the browser tab -->
-        <!-- what style sheets to load -->
-        <!-- what language to use -->
-          <!-- we will always use a character set called UTF-8 -->
-          <!-- UTF-8 allows for all languages as well as things like emoji -->
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #55423d;
+        display: flex;
+        justify-content: center;
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+        border: 2px solid;
+      }
+      .thumbnail {
+        width:48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: none;
+      }
+      .link {
+        background-color: #ffc0ad;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+       }
+
+      .link a {
+        color: #271c19;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .items {
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+
+    </style>
   </head>
 <body>
-  <div class="banner">
-    <img src="mlannen.jpg" alt="Matt Lannen Headshot">
+  <div class="items">
+    <div class="banner">
+      <img src="mlannen.jpg" alt="Matt Lannen Headshot" class="banner-image">
+    </div>
+
+    <div class="name">
+      Matt Lannen
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/lattmannen" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://www.linkedin.com/in/matt-lannen-cfa-8ab2b271/" target="_blank">
+        LinkedIn
+      </a>
+    </div>
+
+    <div class="link">
+      <img
+        src="chicago booth.png" class="thumbnail">
+
+      <a target="_blank" href="https://intranet.chicagobooth.edu/">Chicago Booth Intranet Link</a>
+    </div>
+
+    <div class="link">
+      <img src="Wikipedia-logo-v2-en.svg.png" class="thumbnail">
+
+      <a target="_blank"
+        href="https://wikipedia.com">Wikipedia</a>
+    </div>
+
+    <div class="link">
+      <img
+        src="ChatGPT_logo.svg.png" class="thumbnail">
+
+      <a target="_blank" href="https://https://chat.openai.com/">ChatGPT</a>
+    </div>
   </div>
-
-  <div class="name">
-    Matt Lannen
-  </div>
-
-  <div class="social-icons">
-    <a href="https://www.instagram.com/lattmannen" target="_blank">
-      Instagram
-    </a>
-
-    <a href="https://www.linkedin.com/in/matt-lannen-cfa-8ab2b271/" target="_blank">
-      LinkedIn
-    </a>
-  </div>
-
-  <div class="link">
-    <img
-      src="chicago booth.png">
-
-    <a target="_blank" href="https://intranet.chicagobooth.edu/">Chicago Booth Intranet Link</a>
-  </div>
-
-  <div class="link">
-    <img src="Wikipedia-logo-v2-en.svg.png">
-
-    <a target="_blank"
-      href="https://wikipedia.com">Wikipedia</a>
-  </div>
-
-  <div class="link">
-    <img
-      src="ChatGPT_logo.svg.png">
-
-    <a target="_blank" href="https://https://chat.openai.com/">ChatGPT</a>
-  </div>
-
 </body>
